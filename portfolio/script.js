@@ -9,7 +9,7 @@ nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.cl
 
 // Download resume as PDF (uses browser print to PDF)
 document.getElementById('downloadBtn')?.addEventListener('click', () => {
-  const w = window.open('/portfolio/assests/priyanshudevcv.pdf', '_blank');
+  const w = window.open('assests/priyanshudevcv.pdf', '_blank');
   if (!w) return;
   w.addEventListener('load', () => {
     setTimeout(() => w.print(), 400);
